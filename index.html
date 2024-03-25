@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyewear Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lenses</a></li>
+                <li><a href="#">Frames</a></li>
+                <li><a href="#" id="orderNowLink">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Eyewear Store</h1>
+            <p>Explore our collection of stylish and high-quality lenses and frames.</p>
+        </section>
+
+        <section class="gallery">
+            <section class="gallery">
+                <h2>Lenses</h2>
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <img src="lens1.jpg" alt="Lens 1">
+                        <h3>Single Vision Lenses</h3>
+                        <p>$50</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="lens2.jpg" alt="Lens 2">
+                        <h3>Bifocal Lenses</h3>
+                        <p>$80</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="lens3.jpg" alt="Lens 3">
+                        <h3>Progressive Lenses</h3>
+                        <p>$120</p>
+                    </div>
+                </div>
+    
+                <h2>Frames</h2>
+                <div class="gallery-items">
+                    <div class="gallery-item">
+                        <img src="frame1.jpg" alt="Frame 1">
+                        <h3>Plastic Frames</h3>
+                        <p>$80</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="frame2.jpg" alt="Frame 2">
+                        <h3>Metal Frames</h3>
+                        <p>$100</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="frame3.jpg" alt="Frame 3">
+                        <h3>Rimless Frames</h3>
+                        <p>$150</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="order-form" id="orderForm">
+            <h2>Order Now</h2>
+            <form>
+                <label for="rightEyePower">Right Eye Power:</label>
+                <input type="text" id="rightEyePower" name="rightEyePower" required>
+
+                <label for="leftEyePower">Left Eye Power:</label>
+                <input type="text" id="leftEyePower" name="leftEyePower" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="shippingOption">Shipping Option:</label>
+                <select id="shippingOption" name="shippingOption">
+                    <option value="standard">Standard Shipping</option>
+                    <option value="fast">Fast Shipping</option>
+                </select>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Eyewear Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
